@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Import data
-df = None
+df = pd.read_csv('medical_examination.csv')
 
 # Add 'overweight' column
 df['overweight'] = None
@@ -27,7 +27,7 @@ def draw_cat_plot():
 
     # Do not modify the next two lines
     fig.savefig('catplot.png')
-    return fig
+    return None
 
 
 # Draw Heat Map
